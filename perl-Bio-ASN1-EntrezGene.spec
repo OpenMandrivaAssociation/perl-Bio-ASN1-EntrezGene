@@ -15,7 +15,6 @@ Url:            http://search.cpan.org/dist/%{module}/
 BuildRequires:	perl-devel
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Bio::ASN1::EntrezGene is a regular expression-based Perl Parser for NCBI Entrez
