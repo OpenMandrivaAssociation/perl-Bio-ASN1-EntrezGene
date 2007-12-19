@@ -1,7 +1,7 @@
 %define module	Bio-ASN1-EntrezGene
 %define name	perl-%{module}
 %define version 1.091
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name:		%{name}
 Version:	%{version}
