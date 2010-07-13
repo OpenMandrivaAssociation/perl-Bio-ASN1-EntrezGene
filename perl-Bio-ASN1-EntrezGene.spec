@@ -1,5 +1,5 @@
 %define upstream_name	 Bio-ASN1-EntrezGene
-%define upstream_version 1.091
+%define upstream_version 1.10
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Regular expression-based Perl Parser for NCBI Entrez Gene
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bio/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bio/%{upstream_name}-%{upstream_version}-withoutworldwriteables.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
@@ -25,7 +25,7 @@ parses an ASN.1-formatted Entrez Gene record and returns a data structure that
 contains all data items from the gene record.
 
 %prep
-%setup -q -n %{upstream_name}-1.09
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
