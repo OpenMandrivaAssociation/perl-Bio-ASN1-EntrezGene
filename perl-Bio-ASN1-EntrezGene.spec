@@ -8,7 +8,7 @@ Release:	5
 Summary:	Regular expression-based Perl Parser for NCBI Entrez Gene
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bio/%{upstream_name}-%{upstream_version}-withoutworldwriteables.tar.gz
 
 BuildRequires:	perl-devel
