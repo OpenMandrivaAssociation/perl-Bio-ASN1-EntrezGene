@@ -8,7 +8,7 @@ Release:	1
 Summary:	Regular expression-based Perl Parser for NCBI Entrez Gene
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/release/Bio-ASN1-EntrezGene
+Url:		https://github.com/bioperl/bio-asn1-entrezgene
 Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-%{upstream_version}.tar.gz
 
 BuildRequires:	make
