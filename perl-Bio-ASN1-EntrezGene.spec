@@ -1,15 +1,13 @@
 %define upstream_name	 Bio-ASN1-EntrezGene
-%define upstream_version 1.73
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.73
+Release:	2
 
 Summary:	Regular expression-based Perl Parser for NCBI Entrez Gene
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/bioperl/bio-asn1-entrezgene
-Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ parses an ASN.1-formatted Entrez Gene record and returns a data structure that
 contains all data items from the gene record.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -53,9 +51,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Feb 12 2010 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 1.91.0-1mdv2010.1
 + Revision: 504595
-- rebuild using %%perl_convert_version
-
-* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.091-7mdv2010.0
+- rebuild using %1.73 Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.091-7mdv2010.0
 + Revision: 430266
 - rebuild
 
