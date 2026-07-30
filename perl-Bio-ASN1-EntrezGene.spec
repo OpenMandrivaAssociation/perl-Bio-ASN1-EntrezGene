@@ -1,13 +1,14 @@
 %define upstream_name	 Bio-ASN1-EntrezGene
+%define upstream_version 1.73
 Name:		perl-%{upstream_name}
 Version:	1.73
-Release:	2
+Release:	1
 
 Summary:	Regular expression-based Perl Parser for NCBI Entrez Gene
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/bioperl/bio-asn1-entrezgene
-Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/Bio-ASN1-EntrezGene-1.73.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
