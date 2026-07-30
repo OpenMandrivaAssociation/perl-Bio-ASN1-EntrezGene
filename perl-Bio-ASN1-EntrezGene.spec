@@ -2,7 +2,7 @@
 %define upstream_version 1.73
 Name:		perl-%{upstream_name}
 Version:	1.73
-Release:	3
+Release:	4
 
 Summary:	Regular expression-based Perl Parser for NCBI Entrez Gene
 License:	GPL+ or Artistic
